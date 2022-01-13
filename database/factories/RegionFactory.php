@@ -24,7 +24,7 @@ class RegionFactory extends Factory
     {
         return [
             'pais'            => $this->faker->country(),
-            'nº de clanes'         => Clan::count()
+            'nº de clanes'         =>Clan::count()
         ];
     }
 }

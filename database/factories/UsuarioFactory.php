@@ -3,6 +3,7 @@
 namespace Database\Factories;
 use App\Models\Region;
 use App\Models\Usuario;
+use App\Models\Clan;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UsuarioFactory extends Factory
@@ -22,7 +23,7 @@ class UsuarioFactory extends Factory
     public function definition()
     {
         return [
-            'id-clan'            => Region::all()->$id,
+            'id-clan'            => Clan::all()->random()->id,
             'nombre'            => $this->faker->userName(),
             'contraseña'            => $this->faker->md5(),
             'conectado'            => $this->faker->boolean()

@@ -24,8 +24,8 @@ class ClanFactory extends Factory
     public function definition()
     {
         return [
-            'id-region'            => Region::all()->$id,
-            'name   '            => $this->faker->name(),
+            'id-region'            =>Region::all()->random()->id,
+            'clan'            => $this->faker->name(),
             'nº de usuarios'         => Usuario::count()
         ];
     }

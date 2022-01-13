@@ -17,7 +17,7 @@ class CreateClansTable extends Migration
             $table->id();
             $table->integer('id-region');
             $table->foreign('id-region')->references('id')->on('regions')->onDelete("cascade");
-            $table->string('nombre del clan');
+            $table->string('clan');
             $table->integer('nº de usuarios');
         });
     }

@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         Region::factory()->count(10)->create();
         Clan::factory()->count(25)->create();
         Usuario::factory()->count(50)->create();
+
     }
 }
